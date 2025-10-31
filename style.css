@@ -1,0 +1,239 @@
+﻿*, ::before, ::after{
+	margin: 0;
+	padding: 0;
+}
+
+/* body {
+	background-color: white;
+	font-family: sans-serif;
+	font-weight: 900;
+	font-style: italic;
+	height: 100vh;
+} */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lora', serif;
+	/* font-family: 'Bitter', serif; */
+
+
+	/* overflow: hidden; */
+	background-color: rgb(252, 248, 246);
+	
+	/* user-select: none; */
+}
+
+.crt {
+	display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(180, 200, 220, 0.05) 50%,
+        rgba(200, 200, 200, 0.1) 50%
+    );
+    background-size: 100% 4px;
+    z-index: 2;
+	pointer-events: none;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#header_panel {
+	position: sticky;
+  	top: 0;
+  	overflow: hidden;
+	padding: 10px;
+	width: 65%;
+	margin: auto;
+	background-color: rgb(252, 248, 246);
+	user-select: none;
+}
+
+.link {
+	display: inline-block;
+	/* padding-left: 10px;
+	padding-right: 10px; */
+	margin-right: 10px;
+	text-decoration: none;
+	color: black;
+	/* border: 1px solid black;
+	border-radius: 10px; */
+	font-size: 22px;
+	line-height: 22px;
+	/* font-weight: bold; */
+	/* font-style: italic; */
+}
+
+.link:hover {
+	/* text-decoration: underline; */
+	color: orangered;
+	/* background-color: rgb(240,240,240); */
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#center_panel {
+	width: 65%;
+	margin: auto;
+	margin-top: 5%;
+	font-size: 22px;
+	text-align: left;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#nav {
+	/* border-bottom: 1px dashed black; */
+	/* background-color: red; */
+
+	/* font-family: 'Courier', serif; */
+
+	user-select: none;
+
+	/* border-bottom: 1px solid black;
+	padding-bottom: 2%; */
+}
+
+#nav-header {
+	font-size: 18px;
+	font-style: italic;
+	/* font-weight: bold; */
+	margin-top: 2%;
+}
+
+.nav-link {
+	display: inline-block;
+	/* padding-left: 10px; */
+	/* padding-right: 10px; */
+	margin-right: 10px;
+	/* text-decoration: none; */
+	/* font-weight: bold; */
+	color: black;
+	/* border: 1px solid black;
+	border-radius: 10px; */
+	font-size: 18px;
+	line-height: 18px;
+	
+	/* font-style: italic; */
+}
+
+.nav-link:hover {
+	/* text-decoration: underline; */
+	color: orangered;
+	/* background-color: rgb(240,240,240); */
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#blog {
+	/* border-top: 1px solid black;
+	padding-top: 2%; */
+	margin-top: 2%;
+	font-size: 18px;
+	text-align: left;
+	line-height: 28px;
+
+	font-family: "Lora", sans-serif;
+}
+
+h1, h2, h3, h4 {
+	font-size: 18px;
+	line-height: 40px;
+	margin-top: 12px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 18px;
+	margin-top: 1%;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#xp_panel {
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	/* border: 1px solid grey; */
+	/* vertical-align: middle; */
+	/* border: 1px solid grey; */
+}
+
+#xp_border {
+	display: inline-block;
+	width: 100vw;
+	border-top: 2px solid black;
+	/* border-radius: 3px; */
+	background-color: rgba(0, 0, 0, 0.8);
+	
+	vertical-align: bottom;
+}
+
+#xp_div {
+	height: 4px;
+	border-radius: 1px;
+	/* background-color: rgb(235, 60, 75);
+	border-right: 2px solid rgb(255, 90, 105); */
+	background-color: rgb(255, 200, 15);
+	border-right: 2px solid rgb(255, 120, 35);
+	
+	border-radius: 0px 25px 25px 0px;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+@media only screen and (max-device-width: 800px) {
+	#center_panel {
+		width: 90%;
+	}
+
+	#header_panel {
+		width: 100%;
+		padding: 30px;
+	}
+
+	.link {
+		font-size: 42px;
+		/* border-bottom: 1px dashed black; */
+	}
+
+	#nav {
+		line-height: 54px;
+
+		font-size: 38px;
+	}
+
+	#nav-header {
+		font-size: 38px;
+	}
+
+	.nav-link {
+		font-size: 38px;
+		line-height: 38px;
+	}
+
+	#blog {
+		font-size: 38px;
+		line-height: 52px;
+	}
+
+	h1, h2, h3, h4 {
+		font-size: 40px;
+		line-height: 60px;
+	}
+
+	p {
+		font-size: 40px;
+	}
+}
