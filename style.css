@@ -1,4 +1,4 @@
-﻿*, ::before, ::after{
+*, ::before, ::after{
 	margin: 0;
 	padding: 0;
 }
@@ -141,6 +141,7 @@ body {
 	font-size: 18px;
 	text-align: left;
 	line-height: 28px;
+	padding-bottom: 28px;
 
 	font-family: "Lora", sans-serif;
 }
@@ -155,6 +156,18 @@ h1, h2, h3, h4 {
 p {
 	font-size: 18px;
 	margin-top: 1%;
+}
+
+/* ============================================= */
+/* ============================================= */
+
+#board_panel {
+	display: inline-block;
+	position: fixed;
+	bottom: 0;
+	width: 100vw;
+	height: 32px;
+	border: 1px solid grey;
 }
 
 /* ============================================= */
