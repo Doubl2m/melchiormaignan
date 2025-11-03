@@ -49,7 +49,7 @@ body {
   	top: 0;
   	overflow: hidden;
 	padding: 10px;
-	width: 65%;
+	width: 60%;
 	margin: auto;
 	background-color: rgb(252, 248, 246);
 	user-select: none;
@@ -80,7 +80,7 @@ body {
 /* ============================================= */
 
 #center_panel {
-	width: 65%;
+	width: 60%;
 	margin: auto;
 	margin-top: 5%;
 	font-size: 22px;
@@ -155,7 +155,8 @@ h1, h2, h3, h4 {
 
 p {
 	font-size: 18px;
-	margin-top: 1%;
+	line-height: 32px;
+	margin-top: 2%;
 }
 
 /* ============================================= */
@@ -242,11 +243,13 @@ p {
 	}
 
 	h1, h2, h3, h4 {
-		font-size: 40px;
+		font-size: 42px;
 		line-height: 60px;
 	}
 
 	p {
-		font-size: 40px;
+		font-size: 42px;
+		line-height: 50px;
+		margin-top: 4%;
 	}
 }
