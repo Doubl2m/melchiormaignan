@@ -255,7 +255,7 @@ const map = {
         $.write('keyEarth', `↓ terre`);
 
         $.write('map_title', `KZ, carte heuristique de mots prélevés`);
-        $.write('process_panel', `Protocole : prélever une phrase lue ou entendue. Contextualiser la phrase et sa situation d'énonciation à partir de critères subjectifs. Discriminer la phrase avec quatre questions "clés" : cette phase est-elle proche du ciel ? proche de la terre ? proche de moi ? loin de moi ? Pour chacune des clés, répondre en donnant un score de 0 à 50. But : spatialiser les phrases poétiquement et créer des champs sémantiques d'interprétation. Le poids de la phrase correspond à son point d'équilibre, soit à la somme de ses clés. Le centre de la carte est nul et la somme de ses clés équivaut à 0. Les noeuds à moins de ${aspectRange} orbes forment des aspects entre eux. En fonction de leur nombre, les aspects délimitent le champ d'interprétation des noeuds concernés.`);
+        $.write('process_panel', `Protocole : prélever une phrase lue ou entendue. Contextualiser la phrase et sa situation d'énonciation à partir de critères subjectifs. Discriminer la phrase avec quatre questions "clés" : cette phrase est-elle proche du ciel ? proche de la terre ? proche de moi ? loin de moi ? Pour chacune des clés, répondre en donnant un score de 0 à 50. But : spatialiser les phrases poétiquement et créer des champs sémantiques d'interprétation. Le poids de la phrase correspond à son point d'équilibre, soit à la somme de ses clés. Le centre de la carte est nul et la somme de ses clés équivaut à 0. Les noeuds à moins de ${aspectRange} orbes forment des aspects entre eux. En fonction de leur nombre, les aspects délimitent le champ d'interprétation des noeuds concernés.`);
 
         // var mapTitle = document.createElement('div');
         // mapTitle.classList = 'mapTitle';
@@ -280,4 +280,5 @@ void function main() {
     console.log('%c void function main','color: orange');
 
     localStorage.length ? loadSave() : map.init();
+
 }();
