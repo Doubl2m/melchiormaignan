@@ -287,7 +287,7 @@ p {
 	position: absolute;
 	margin-top: 25px;
 
-	width: 150px;
+	width: 300px;
 	padding: 5px;
 
 	text-align: left;
@@ -306,6 +306,7 @@ p {
 .infoKeyInfo {
 	font-style: italic;
 	font-size: 18px;
+	margin-top: 10px;
 }
 
 /* ============================================= */
