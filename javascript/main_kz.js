@@ -56,8 +56,22 @@ var n0 = new Node (
     false, // weight
 );
 
+var n1 = new Node (
+    false, // id
+    false, // x
+    false, // y
+    false, // keyIcon
+    `Vous autres enfants ordinaires, ne pouvez l'entendre, mais si cela vous arrivait jamais, il vous souviendrait alors que vous l'avez déjà entendu`, // keyWhat
+    `Peter Pan, James M. Barrie`, // keyInfo
+    22, // keySky
+    29, // keyEarth
+    44, // keyClose
+    38, // keyFar
+    false, // weight
+);
+
 const map = {
-    board: [n0],
+    board: [n0, n1],
     nodeCount: 0,
     // wSize: 40,
     // hSize: 70,
@@ -280,5 +294,4 @@ void function main() {
     console.log('%c void function main','color: orange');
 
     localStorage.length ? loadSave() : map.init();
-
 }();
